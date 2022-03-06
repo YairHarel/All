@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OpenWeatherMap Api</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/weather-2191838-1846632.png">
+</head>
+
+<body>
+    <div class="body">
+        <div class="preloader"></div>
+
+        <button class="menuBtn"></button>
+        <div class="menu hide">
+            <a href="https://nbasite.netlify.app">NBA site</a>
+            <a href="https://weatherappyair.netlify.app/">Weather app</a>
+            <a href="https://weatheryair.netlify.app/">Weather site</a>
+        </div>
+
+        <div class="input">
+            <input type="text" placeholder="...הכנס שם עיר" class="input_text">
+            <input type="submit" value="חפש" class="submit">
+        </div>
+
+
+        <div class="container">
+            <div class="card">
+                <h1 class="name" id="name"></h1>
+                <p class="temp"></p>
+                <p class="clouds"></p>
+                <p class="desc"></p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="backend.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pushster&display=swap");
+
+* {
+    font-family: "Pushster", cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    position: absolute;
+    top: 0;
+    background-image: url(https://wallpaper.dog/large/978191.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* https://mir-s3-cdn-cf.behance.net/project_modules/disp/09b24e31234507.564a1d23c07b4.gif */
+.preloader {
+    background: #202020 url(https://icon-library.com/images/weather-icon-gif/weather-icon-gif-20.jpg) no-repeat center center;
+    background-size: 15%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+#mode {
+    width: 30px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none !important;
+}
+
+.menuBtn {
+    border: none;
+    background-image: url(https://icons-for-free.com/iconfiles/png/512/svg+general+ham+list+menu+menu+icon+office+icon-1320185157378483623.png);
+    background-color: var(--body-background-color);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    z-index: 90;
+}
+
+.menu {
+    width: 250px;
+    position: absolute;
+    background-color: var(--background-color);
+    height: 300px;
+    top: 0;
+    right: 0;
+    border: var(--buttons-color) 2px solid;
+    border-radius: 4px;
+}
+
+.menu a {
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    text-shadow: 1px 1px 2px white;
+    font-family: cursive;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    top: 50px;
+    margin: 30px;
+    padding-top: 10px;
+    justify-content: center;
+
+}
+
+.input {
+    text-align: center;
+    margin: 100px auto;
+}
+
+input[type="submit"] {
+    padding: 15px 30px;
+    background: rgb(255 255 255 / 70%);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgb(255 255 255 / 90%);
+    font-weight: bolder;
+}
+
+.input input[type="text"] {
+    width: 50%;
+    height: 55px;
+    padding: 5px 10px;
+    background-color: rgb(255 255 255 / 70%);
+    border: none;
+    border-radius: 1px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: emoji;
+}
+
+.card {
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 2px;
+    padding: 20px;
+}
+
+.close {
+    float: right;
+    margin-top: -2px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.card h1 {
+    font-size: 3rem;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 0px 5px 10px #ffffff;
+}
+
+.card p {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 40px 0;
+    text-shadow: 0px 5px 10px #4f4f4f;
+}
+
+/* up to 400px screen width */
+@media only screen and (max-width: 400px) {
+    .input {
+        margin: 50px auto;
+    }
+
+    input[type="submit"] {
+        font-size: 12px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+
+    .input input[type="text"] {
+        width: 50%;
+        height: 40px;
+        padding: 5px 10px;
+        font-size: 20px;
+        font-family: emoji;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    .card h1 {
+        font-size: 2rem;
+    }
+
+    .card p {
+        font-size: 2rem;
+    }
+}
+
+/* up to 360px screen width */
+@media only screen and (max-width: 360px) {
+    .card h1 {
+        font-size: 2rem;
+    }
+
+    .card p {
+        font-size: 1.5rem;
+    }
+}
